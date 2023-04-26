@@ -1,10 +1,14 @@
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	margin: 0;
-	height: 100vh;
+    margin: 0;
+    height: 100vh;
 
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -15,5 +19,41 @@ body {
 }
 
 .sidebar {
+    padding: 1.5rem;
+
     grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-wrapper {
+	margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-links,
+.secondary-links {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1rem 0.5rem;
+	align-items: center;
+}
+
+.main-links {
+	grid-template-rows: repeat(7, 1fr);
+}
+
+.secondary-links {
+	grid-template-rows: repeat(3, 1fr);
 }
