@@ -6,34 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@1" rel="stylesheet" />
     </head>
     <body>
         <aside class="sidebar">
             <div class="logo-wrapper">
-                <img src="https://placehold.co/75" alt="Site logo" class="logo-img" />
+                <img src="./images/logo.svg" alt="Site logo" class="logo-img" height="50px" width="50px"/>
                 <h1 class="logo-text">Dashboard</h1>
             </div>
             <nav class="sidebar-nav">
                 <div class="main-links">
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">home</span>
                     <a href="#">Home</a>
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">person</span>
                     <a href="#">Profile</a>
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">mail</span>
                     <a href="#">Messages</a>
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">checklist</span>
                     <a href="#">Tasks</a>
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">groups</span>
                     <a href="#">Communities</a>
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">history</span>
                     <a href="#">History</a>
                 </div>
                 <div class="secondary-links">
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">settings</span>
                     <a href="#">Settings</a>
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">contact_support</span>
                     <a href="#">Support</a>
-                    <img src="https://placehold.co/40" alt="" class="icon" />
+                    <span class="material-symbols-outlined">shield_person</span>
                     <a href="#">Privacy</a>
                 </div>
             </nav>
@@ -41,22 +42,31 @@
         <header class="header">
             <div class="top">
                 <div class="search">
-                    <button type="submit" class="icon-button" aria-label="Search button"></button>
+                    <button type="submit" class="icon-button" aria-label="Search button">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
                     <input type="search" class="search-bar" id="search-bar" aria-label="Search bar" />
                 </div>
                 <div class="user-info">
-                    <button type="button" class="icon-button" aria-label="Alerts"></button>
-                    <img src="https://placehold.co/50" alt="Profile picture" class="profile-image" />
+                    <button type="button" class="icon-button" aria-label="Alerts">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <img
+                        src="./images/profile-pic.png"
+                        alt="Profile picture"
+                        class="profile-image"
+                        height="50px"
+                        width="50px" />
                     <div class="username">Alex Dilion</div>
                 </div>
             </div>
             <div class="bottom">
                 <div class="user-welcome">
-                    <img src="https://placehold.co/75" alt="Profile picture" class="profile-image" />
+                    <img src="./images/profile-pic.png" alt="Profile picture" class="profile-image" height="75px" width="75px"/>
                     <div>
-						<p>Hi there,</p>
-						<h2 class="username">Alex Dilion (@alex)</h2>
-					</div>
+                        <p>Hi there,</p>
+                        <h2 class="username">Alex Dilion (@alex)</h2>
+                    </div>
                 </div>
                 <div class="action-links">
                     <a href="#">New</a>
@@ -72,3 +82,7 @@
         </main>
     </body>
 </html>
+
+<!-- 
+	.card>(.content>(h3.title+p.description))+.card-controls>button.icon-button*3
+ -->
