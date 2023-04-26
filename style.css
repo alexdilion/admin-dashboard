@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
 *,
 ::before,
 ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+	font-family: Poppins, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: 500;
 }
 
 body {
@@ -18,18 +22,22 @@ body {
         "sidebar main-content";
 }
 
-.sidebar {
-    background-color: rgb(91, 156, 255);
+a {
+	text-decoration: none;
 }
 
-.header {
-    background-color: rgb(255, 92, 119);
+a:visited {
+	color: inherit;
 }
 
 /* Sidebar CSS */
 
 .sidebar {
     padding: 20px;
+	padding-right: 30px;
+	background-color: #0a0a0a;
+	color: #f8fafc;
+	border-radius: 0 15px 15px 0;
 
     grid-area: sidebar;
     display: flex;
@@ -51,8 +59,15 @@ body {
     justify-content: space-between;
 }
 
+.logo-text {
+	font-weight: 800;
+	font-size: 2rem;
+}
+
 .main-links,
 .secondary-links {
+	font-size: 1.25rem;
+
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 1rem 0.5rem;
@@ -68,8 +83,7 @@ body {
 }
 
 .sidebar .icon {
-    height: 2rem;
-    width: 2rem;
+    font-size: 2rem;
 }
 
 /* Header CSS */
@@ -92,6 +106,10 @@ body {
     align-items: center;
     display: flex;
     gap: 0.75rem;
+}
+
+.username {
+	font-weight: 800;
 }
 
 .search {
