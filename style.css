@@ -37,7 +37,7 @@ a:visited {
 	padding-right: 30px;
 	background-color: #0a0a0a;
 	color: #f8fafc;
-	border-radius: 0 15px 15px 0;
+	border-radius: 0 0 25px 0;
 
     grid-area: sidebar;
     display: flex;
@@ -93,6 +93,9 @@ a:visited {
     grid-template-rows: auto 2fr;
     padding: 20px calc(0.5rem + 2vw);
     gap: 1rem;
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	color: #0a0a0a;
+	border-bottom-right-radius: 25px;
 }
 
 .top {
@@ -105,7 +108,6 @@ a:visited {
 .user-info {
     align-items: center;
     display: flex;
-    gap: 0.75rem;
 }
 
 .username {
@@ -114,16 +116,56 @@ a:visited {
 
 .search {
     flex: 1;
+	gap: 1rem;
 }
 
 .search .search-bar {
     width: min(100%, 800px);
 }
 
+.icon-button,
+.search-bar {
+	appearance: none;
+	border-radius: 100px;
+}
+
 .icon-button {
-    height: 40px;
-    width: 40px;
-    flex-shrink: 0;
+	flex: 0;
+	border: none;
+	display: grid;
+	place-items: center;
+	background-color: transparent;
+}
+
+.icon-button:hover {
+	cursor: pointer;
+}
+
+.icon-button::selection {
+	outline: 1px solid black;
+}
+
+.icon-button > .icon {
+	font-size: 35px;
+}
+
+.search-bar {
+	height: 35px;
+	padding-left: 1rem;
+	font-size: 1rem;
+	border: 1px solid #0a0a0a;
+}
+
+.user-info {
+	gap: 1.5rem;
+}
+
+.user-info .username {
+	font-size: 1.25rem;
+}
+
+.profile-image {
+	border-radius: 100px;
 }
 
 .bottom {
@@ -132,13 +174,40 @@ a:visited {
     align-items: center;
 }
 
+.bottom .user-welcome p,
+.action-links a {
+	font-size: 1.25rem;
+}
+
+.action-links {
+    display: grid;
+	grid-template-columns: repeat(3, max-content);
+    gap: .75rem;
+}
+
+.action-links a {
+	font-weight: 800;
+	background-color: #3b82f6;
+	color: #f8fafc;
+	padding: .5em .75em;
+	border-radius: .75em;
+
+	transition: background-color .2s ease-out;
+
+	display: grid;
+	place-items: center;
+}
+
+.action-links a:hover {
+	background-color: #236fe9;
+}
+
+.action-links a:active {
+	background-color: #1149a3;
+}
+
 .user-welcome {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.action-links {
-    display: flex;
-    gap: 2rem;
 }
