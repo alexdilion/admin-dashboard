@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
 
 *,
 ::before,
@@ -6,8 +6,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-	font-family: Poppins, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-weight: 500;
+    font-family: Poppins, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-weight: 500;
 }
 
 body {
@@ -23,21 +23,26 @@ body {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
+    color: #f8fafc;
 }
 
 a:visited {
-	color: inherit;
+    color: #f8fafc;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Sidebar CSS */
 
 .sidebar {
     padding: 20px;
-	padding-right: 30px;
-	background-color: #0a0a0a;
-	color: #f8fafc;
-	border-radius: 0 0 25px 0;
+    padding-right: 30px;
+    background-color: #0a0a0a;
+    color: #f8fafc;
+    border-radius: 0 0 25px 0;
 
     grid-area: sidebar;
     display: flex;
@@ -49,7 +54,7 @@ a:visited {
 
     display: flex;
     align-items: center;
-	gap: 1rem;
+    gap: 1rem;
 }
 
 .sidebar-nav {
@@ -60,13 +65,13 @@ a:visited {
 }
 
 .logo-text {
-	font-weight: 800;
-	font-size: 2rem;
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 .main-links,
 .secondary-links {
-	font-size: 1.25rem;
+    font-size: 1.25rem;
 
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -93,9 +98,9 @@ a:visited {
     grid-template-rows: auto 2fr;
     padding: 20px calc(0.5rem + 2vw);
     gap: 1rem;
-	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-	color: #0a0a0a;
-	border-bottom-right-radius: 25px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    color: #0a0a0a;
+    border-bottom-right-radius: 25px;
 }
 
 .top {
@@ -111,12 +116,12 @@ a:visited {
 }
 
 .username {
-	font-weight: 800;
+    font-weight: 800;
 }
 
 .search {
     flex: 1;
-	gap: 1rem;
+    gap: 1rem;
 }
 
 .search .search-bar {
@@ -125,47 +130,47 @@ a:visited {
 
 .icon-button,
 .search-bar {
-	appearance: none;
-	border-radius: 100px;
+    appearance: none;
+    border-radius: 100px;
 }
 
 .icon-button {
-	flex: 0;
-	border: none;
-	display: grid;
-	place-items: center;
-	background-color: transparent;
+    flex: 0;
+    border: none;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
 }
 
 .icon-button:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .icon-button::selection {
-	outline: 1px solid black;
+    outline: 1px solid black;
 }
 
 .icon-button > .icon {
-	font-size: 35px;
+    font-size: 35px;
 }
 
 .search-bar {
-	height: 35px;
-	padding-left: 1rem;
-	font-size: 1rem;
-	border: 1px solid #0a0a0a;
+    height: 35px;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: 1px solid #0a0a0a;
 }
 
 .user-info {
-	gap: 1.5rem;
+    gap: 1.5rem;
 }
 
 .user-info .username {
-	font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .profile-image {
-	border-radius: 100px;
+    border-radius: 100px;
 }
 
 .bottom {
@@ -176,34 +181,34 @@ a:visited {
 
 .bottom .user-welcome p,
 .action-links a {
-	font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .action-links {
     display: grid;
-	grid-template-columns: repeat(3, max-content);
-    gap: .75rem;
+    grid-template-columns: repeat(3, max-content);
+    gap: 0.75rem;
 }
 
 .action-links a {
-	font-weight: 800;
-	background-color: #3b82f6;
-	color: #f8fafc;
-	padding: .5em .75em;
-	border-radius: .75em;
+    font-weight: 800;
+    background-color: #3b82f6;
+    color: #f8fafc;
+    padding: 0.5em 0.75em;
+    border-radius: 0.75em;
 
-	transition: background-color .2s ease-out;
+    transition: background-color 0.2s ease-out;
 
-	display: grid;
-	place-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .action-links a:hover {
-	background-color: #236fe9;
+    background-color: #236fe9;
 }
 
 .action-links a:active {
-	background-color: #1149a3;
+    background-color: #1149a3;
 }
 
 .user-welcome {
@@ -211,3 +216,5 @@ a:visited {
     align-items: center;
     gap: 1rem;
 }
+
+/* Projects */
