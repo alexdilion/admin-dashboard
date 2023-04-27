@@ -12,7 +12,7 @@
         <aside class="sidebar">
             <div class="logo-wrapper">
                 <img src="./images/logo.svg" alt="Site logo" class="logo-img" height="50px" width="50px" />
-                <h1 class="logo-text">Dashboard</h1>
+                <h1 class="logo-text bold-text">Dashboard</h1>
             </div>
             <nav class="sidebar-nav">
                 <div class="main-links">
@@ -57,7 +57,7 @@
                         class="profile-image"
                         height="50px"
                         width="50px" />
-                    <div class="username">Alex Dilion</div>
+                    <div class="username bold-text">Alex Dilion</div>
                 </div>
             </div>
             <div class="bottom">
@@ -70,21 +70,22 @@
                         width="75px" />
                     <div>
                         <p>Hi there,</p>
-                        <h2 class="username">Alex Dilion (@alex)</h2>
+                        <h2 class="username bold-text">Alex Dilion (@alex)</h2>
                     </div>
                 </div>
                 <div class="action-links">
-                    <a href="#">Upload</a>
-                    <a href="#">New</a>
-                    <a href="#">Share</a>
+                    <a href="#" class="bold-text">Upload</a>
+					<a href="#" class="bold-text">New</a>
+                    <a href="#" class="bold-text">Share</a>
                 </div>
             </div>
         </header>
         <main class="main-content">
+			<h2 class="bold-text section-header">Projects</h2>
             <div class="projects">
                 <div class="card">
                     <div class="content">
-                        <h3 class="title">Calculator</h3>
+                        <h3 class="title bold-text">Calculator</h3>
                         <p class="description">
                             App that performs simple arithmetic operations like addition,
                             subtraction, multiplication, and division.
@@ -104,7 +105,7 @@
                 </div>
                 <div class="card">
                     <div class="content">
-                        <h3 class="title">To-Do List</h3>
+                        <h3 class="title bold-text">To-Do List</h3>
                         <p class="description">
                             App that allows users to create and manage their to-do lists with features like task
                             prioritization, due dates, and reminders.
@@ -124,7 +125,7 @@
                 </div>
                 <div class="card">
                     <div class="content">
-                        <h3 class="title">Random Quote Generator</h3>
+                        <h3 class="title bold-text">Random Quote Generator</h3>
                         <p class="description">
                             App that displays a random quote each time the user clicks a button.
                         </p>
@@ -143,7 +144,7 @@
                 </div>
                 <div class="card">
                     <div class="content">
-                        <h3 class="title">Pomodoro Timer</h3>
+                        <h3 class="title bold-text">Pomodoro Timer</h3>
                         <p class="description">App that allows users to set up their own Pomodoro study timer.</p>
                     </div>
                     <div class="card-controls">
@@ -160,7 +161,7 @@
                 </div>
                 <div class="card">
                     <div class="content">
-                        <h3 class="title">Password Generator</h3>
+                        <h3 class="title bold-text">Password Generator</h3>
                         <p class="description">
                             App that generates a random password based on the user's preferences like length,
                             complexity, and character types.
@@ -180,7 +181,7 @@
                 </div>
                 <div class="card">
                     <div class="content">
-                        <h3 class="title">Hangman Game</h3>
+                        <h3 class="title bold-text">Hangman Game</h3>
                         <p class="description">
                             App that allows users to play the classic word-guessing game Hangman.
                         </p>
@@ -198,8 +199,16 @@
                     </div>
                 </div>
             </div>
-            <div class="announcements"></div>
-            <div class="trending"></div>
+            <aside class="sidebar-container">
+				<h2 class="section-header bold-text">Announcements</h2>
+				<div class="announcements card">
+
+				</div>
+				<h2 class="section-header bold-text">Trending</h2>
+				<div class="trending card">
+
+				</div>
+			</aside>
         </main>
     </body>
 </html>
