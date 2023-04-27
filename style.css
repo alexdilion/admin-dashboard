@@ -286,15 +286,42 @@ a:hover {
 	gap: 1rem;
 }
 
-.announcements .bold-text {
-	font-size: 1rem;
+.sidebar-container .bold-text {
+	font-size: .9rem;
 }
 
-.announcements p {
+.sidebar-container .bold-text.section-header {
+	font-size: 1.5rem;
+}
+
+.sidebar-container p {
 	color: #333333;
-	font-size: .9rem;
+	font-size: .75rem;
 }
 
 .announcements hr {
 	margin: 1rem 0;
+}
+
+.trending {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+.trending .user-card {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 1rem;
+}
+
+.trending-card-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.trending .profile-image {
+	height: 50px;
+	width: 50px;
 }
