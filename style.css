@@ -39,7 +39,7 @@ a:hover {
 }
 
 .bold-text {
-	font-weight: 800;
+    font-weight: 800;
 }
 
 /* Sidebar CSS */
@@ -274,54 +274,54 @@ a:hover {
 }
 
 .section-header {
-	padding-left: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 /* Sidebar */
 
 .sidebar-container {
-	grid-area: sidebar;
-	display: grid;
-	grid-template-rows: 2rem max-content 2rem max-content;
-	gap: 1rem;
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 2rem max-content 2rem max-content;
+    gap: 1rem;
 }
 
 .sidebar-container .bold-text {
-	font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .sidebar-container .bold-text.section-header {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .sidebar-container p {
-	color: #333333;
-	font-size: .75rem;
+    color: #333333;
+    font-size: 0.75rem;
 }
 
 .announcements hr {
-	margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .trending {
-	display: grid;
-	grid-template-rows: repeat(4, 1fr);
-	gap: 1rem;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
 }
 
 .trending .user-card {
-	display: grid;
-	grid-template-columns: max-content 1fr;
-	gap: 1rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1rem;
 }
 
 .trending-card-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .trending .profile-image {
-	height: 50px;
-	width: 50px;
+    height: 50px;
+    width: 50px;
 }
