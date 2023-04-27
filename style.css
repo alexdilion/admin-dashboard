@@ -221,13 +221,13 @@ a:hover {
 /* Projects */
 
 .main-content {
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
 
     display: grid;
     grid-template:
         "p-header sidebar" 2rem
         "projects sidebar" 1fr / 4fr 1fr;
-    gap: 1.5rem;
+    gap: 1rem 1.5rem;
     color: #0a0a0a;
 }
 
@@ -282,6 +282,19 @@ a:hover {
 .sidebar-container {
 	grid-area: sidebar;
 	display: grid;
-	grid-template-rows: 2rem 1fr 2rem 1fr;
+	grid-template-rows: 2rem max-content 2rem max-content;
 	gap: 1rem;
+}
+
+.announcements .bold-text {
+	font-size: 1rem;
+}
+
+.announcements p {
+	color: #333333;
+	font-size: .9rem;
+}
+
+.announcements hr {
+	margin: 1rem 0;
 }
